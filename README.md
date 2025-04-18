@@ -2,6 +2,8 @@
 
 A modern file tree component built with Next.js, Shadcn UI, and Tailwind CSS. This project demonstrates a reusable file tree component that can be used in any Next.js application.
 
+<img width="933" alt="image" src="https://github.com/user-attachments/assets/fc1b752f-b7bf-4838-921d-8064111a1854" />
+
 ## Features
 
 - Interactive file tree navigation
