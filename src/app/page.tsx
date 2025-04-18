@@ -3,6 +3,7 @@
 import * as React from "react";
 import { TreeView, TreeViewItem } from "@/components/tree-view";
 import { Button } from "@/components/ui/button";
+import { Github } from "lucide-react";
 
 const sampleData: TreeViewItem[] = [
   {
@@ -59,19 +60,34 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-        <h1 className="text-2xl font-bold mb-8">Tree View Demo</h1>
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <TreeView
-            data={sampleData}
-            onSelectionChange={handleSelectionChange}
-          />
-          <div className="mt-4 flex items-center justify-between">
-            <span className="text-sm text-gray-500">
-              {selectedFile ? "1 file selected" : "No file selected"}
-            </span>
-            <Button onClick={handleAction} disabled={!selectedFile}>
-              Show Selected File
-            </Button>
+        <div className="flex flex-col items-center justify-center min-h-screen p-4">
+          <div className="w-full max-w-4xl">
+            <div className="flex justify-between items-center mb-8">
+              <h1 className="text-2xl font-bold">File Tree Component Demo</h1>
+              <a
+                href="https://github.com/iarmankhan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Github className="h-4 w-4" />
+                iarmankhan
+              </a>
+            </div>
+            <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
+              <TreeView
+                data={sampleData}
+                onSelectionChange={handleSelectionChange}
+              />
+              <div className="mt-4 flex items-center justify-between">
+                <span className="text-sm text-gray-500">
+                  {selectedFile ? "1 file selected" : "No file selected"}
+                </span>
+                <Button onClick={handleAction} disabled={!selectedFile}>
+                  Show Selected File
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
