@@ -58,9 +58,9 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-        <div className="flex flex-col items-center justify-center min-h-screen p-4">
+        <div className="flex flex-col items-center justify-center p-4">
           <div className="w-full max-w-4xl">
             <div className="flex justify-between items-center mb-8">
               <h1 className="text-2xl font-bold">File Tree Component Demo</h1>
