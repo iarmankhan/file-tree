@@ -14,7 +14,7 @@ A modern file tree component built with Next.js, Shadcn UI, and Tailwind CSS. Th
 
 ## Live Demo
 
-Check out the live demo at: [https://file-tree-demo-lj5h2s0a5-iarmankhans-projects.vercel.app](https://file-tree-demo-lj5h2s0a5-iarmankhans-projects.vercel.app)
+Check out the live demo at: https://file-tree-demo.vercel.app/
 
 ## Getting Started
 
